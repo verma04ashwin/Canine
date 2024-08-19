@@ -69,12 +69,35 @@
                 </ul>
         </section>
         <section>
-            <h2>Canine Form</h2>
-            <fieldset>
-                <p>Do you have a cat or a dog</p>
-            </fieldset>
+            <form action="random.js">
+                <h2>Canine Form</h2>
+                <fieldset>
+                    <legend>Do you have a cat or a dog?</legend>
+                        <input id="catRadio" type="radio" name="catordog" value="cat"> <label for="catRadio">Cat</label>
+                        <input id="dogRadio" type="radio" name="catordog" value="dog" checked> <label for="dogRadio">Dog</label>
+                        <input id="bothRadio" type="radio" name="catordog" value="both"> <label for="BothRadio">Both</label>
+                </fieldset>
+                <fieldset>
+                    <legend>What is your canine's personality like?</legend>
+                    <input type="checkbox" id="lazyCheckbox" name="personality" value="lazy"> <label for="lazyCheckbox">Lazy</label>
+                    <input type="checkbox" name="personality" id="energeticCheckbox" value="energetic"> <label for="energeticCheckbox">Energetic</label>
+                    <input type="checkbox" name="personality" id="calmCheckbox" value="calm"><label for="calmCheckbox">Calm</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Are you Planning to get a new pet, Who is it gonna be?</legend>
+                    <input id="catNewPet"type="radio" name="newPet"value="catNewPet"> <label for="catNewPet">Cat</label>
+                    <input id="dogNewPet"type="radio" name="newPet" value="dogNewPet"> <label for="dogNewPet">Dog</label>
+                    <input id="bothNewPet"type="radio" name="newPet" value="bothNewPet"> <label for="bothNewPet">Both</label>
+                </fieldset>
+                <input type="text" name="uploadCaninePhoto" placeholder="Canine Photo URL" required>
+                <button type="submit">Submit</button>
+            </form>
         </section>
-
     </main>
+    <footer>
+        <p>
+            No Copyright - <a href="https://github.com/verma04ashwin/Canine">Visit my Github</a>
+        </p>
+    </footer>
 </body>
 </html>
